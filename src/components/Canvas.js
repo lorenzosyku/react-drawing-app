@@ -1,9 +1,22 @@
-function Canvas() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import { useEffect } from "react";
 
-export default Canvas
+export function Canvas({
+  canvasRef,
+  prepareCanvas,
+  startDrawing,
+  finishDrawing,
+  draw,
+}) {
+  useEffect(() => {
+    prepareCanvas();
+  }, []);
+
+  return (
+    <canvas
+      onMouseDown={startDrawing}
+      onMouseUp={finishDrawing}
+      onMouseMove={draw}
+      ref={canvasRef}
+    />
+  );
+}

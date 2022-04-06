@@ -1,9 +1,7 @@
-function ClearCanvasButton() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
 
-export default ClearCanvasButton
+
+export const ClearCanvasButton = ({ clearCanvas }) => {
+
+
+  return <button onClick={clearCanvas}>Clear</button>
+}
