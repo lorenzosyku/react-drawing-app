@@ -51,8 +51,7 @@ function App() {
     context.fillRect(0, 0, canvas.width, canvas.height);
   };
   return (
-    <div className="bg-amber-300">
-      
+    <div>
       <ClearCanvasButton clearCanvas={clearCanvas} />
       <Canvas
         canvasRef={canvasRef}
