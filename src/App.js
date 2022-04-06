@@ -52,13 +52,15 @@ function App() {
   };
   return (
     <div>
-      <ClearCanvasButton clearCanvas={clearCanvas} />
+      <ClearCanvasButton
+        clearCanvas={clearCanvas}
+        prepareCanvas={prepareCanvas}
+      />
       <Canvas
         canvasRef={canvasRef}
         startDrawing={startDrawing}
         draw={draw}
         finishDrawing={finishDrawing}
-        prepareCanvas={prepareCanvas}
       />
     </div>
   );
