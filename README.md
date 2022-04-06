@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a simple app that allows the user to draw using the cursor and there is a button to clear the drawing.
 
-https://imgur.com/a/9Kir67x
+[<img height="32px" style="margin: 5px" src="https://imgur.com/a/9Kir67x">]
