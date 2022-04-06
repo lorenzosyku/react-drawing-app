@@ -12,7 +12,7 @@ export function Canvas({
   }, []);
 
   return (
-    <canvas className=""
+    <canvas
       onMouseDown={startDrawing}
       onMouseUp={finishDrawing}
       onMouseMove={draw}
